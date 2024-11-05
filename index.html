@@ -8,51 +8,52 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         body {
-            background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
-            color: #e0e0e0;
-            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
+            color: #f5f5f5;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
         }
         .navbar, .footer {
-            background-color: #111;
-            color: #ffd700;
-            border-bottom: 1px solid #ffd700;
+            background-color: #333;
+            color: #ffcc00;
+            border-bottom: 2px solid #ffcc00;
         }
         .navbar-brand, .nav-link, .footer p {
-            color: #ffd700 !important;
+            color: #ffcc00 !important;
         }
         .btn-custom {
-            background-color: #ffd700;
+            background-color: #ffcc00;
             color: #000;
         }
         .hero {
             text-align: center;
-            padding: 100px 0;
-            background: radial-gradient(circle, #222, #111);
+            padding: 120px 0;
+            background: radial-gradient(circle, #444, #222);
         }
         .section-title {
-            color: #ffd700;
+            color: #ffcc00;
             font-weight: bold;
+            text-align: center;
+            margin-top: 40px;
         }
         .card {
-            background-color: #222;
-            color: #e0e0e0;
+            background-color: #444;
+            color: #f5f5f5;
             margin-bottom: 20px;
         }
         .chatbot-prompt {
             position: fixed;
             bottom: 20px;
             right: 20px;
-            background-color: #ffd700;
+            background-color: #ffcc00;
             color: #000;
-            padding: 10px;
+            padding: 10px 15px;
             border-radius: 10px;
             font-weight: bold;
             cursor: pointer;
         }
     </style>
 </head>
-
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
@@ -69,13 +70,13 @@
 
     <div class="hero">
         <h1>Shashi Kiran M</h1>
-        <h4>Engineer and Developer</h4>
-        <p>Welcome to my portfolio! Feel free to explore my skills, projects, and more.</p>
-        <p><strong>Try out my chatbot at the bottom right!</strong></p>
+        <h4>Generative AI Engineer</h4>
+        <p>Welcome to my portfolio! Explore my skills and projects.</p>
+        <p><strong>Check out my chatbot feature in the bottom right corner!</strong></p>
         <a href="about.html" class="btn btn-custom mt-3">Learn More About Me</a>
     </div>
 
-    <div class="chatbot-prompt" onclick="openChatbot()">Try my new chatbot!</div>
+    <div class="chatbot-prompt" onclick="openChatbot()">Chat with Me!</div>
 
     <footer class="footer text-center p-3">
         <p>&copy; 2024 Shashi Kiran M. All rights reserved.</p>
@@ -87,4 +88,3 @@
         }
     </script>
 </body>
-</html>
