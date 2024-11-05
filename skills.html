@@ -8,33 +8,37 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         body {
-            background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
-            color: #f5f5f5;
+            background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
+            color: #e0e0e0;
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
         }
         .navbar, .footer {
-            background-color: #333;
-            color: #ffcc00;
-            border-bottom: 2px solid #ffcc00;
+            background-color: #111;
+            color: #ffd700;
+            border-bottom: 2px solid #ffd700;
         }
         .navbar-brand, .nav-link, .footer p {
-            color: #ffcc00 !important;
+            color: #ffd700 !important;
         }
         .btn-custom {
-            background-color: #ffcc00;
+            background-color: #ffd700;
             color: #000;
         }
         .section-title {
-            color: #ffcc00;
+            color: #ffd700;
             font-weight: bold;
             text-align: center;
             margin-top: 40px;
         }
         .card {
-            background-color: #444;
-            color: #f5f5f5;
+            background-color: #222;
+            color: #e0e0e0;
             margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
         }
     </style>
 </head>
@@ -60,7 +64,7 @@
             <div class='col-md-4 mb-4'>
                 <div class='card text-center'>
                     <div class='card-body'>
-                        <i class='fab fa-python fa-3x mb-3' style='color: #ffcc00;'></i> 
+                        <i class='fab fa-python fa-3x mb-3' style='color: #ffd700;'></i> 
                         <h5>Python</h5> 
                     </div> 
                 </div> 
@@ -68,7 +72,7 @@
             <div class='col-md-4 mb-4'> 
                 <div class='card text-center'> 
                     <div class='card-body'> 
-                        <i class='fab fa-java fa-3x mb-3' style='color: #ffcc00;'></i> 
+                        <i class='fab fa-java fa-3x mb-3' style='color: #ffd700;'></i> 
                         <h5>Java</h5> 
                     </div> 
                 </div> 
@@ -76,7 +80,7 @@
             <div class='col-md-4 mb-4'> 
                 <div class='card text-center'> 
                     <div class='card-body'> 
-                        <i class='fas fa-code fa-3x mb-3' style='color: #ffcc00;'></i> 
+                        <i class='fas fa-code fa-3x mb-3' style='color: #ffd700;'></i> 
                         <h5>C</h5> 
                     </div> 
                 </div> 
@@ -89,7 +93,7 @@
             <div class='col-md-4 mb-4'>
                 <div class='card text-center'>
                     <div class='card-body'>
-                        <i class='fab fa-angular fa-3x mb-3' style='color: #ffcc00;'></i> 
+                        <i class='fab fa-angular fa-3x mb-3' style='color: #ffd700;'></i> 
                         <h5>Angular</h5> 
                     </div> 
                 </div> 
@@ -97,73 +101,50 @@
             <div class='col-md-4 mb-4'> 
                 <div class='card text-center'> 
                     <div class='card-body'> 
-                        <i class='fab fa-bootstrap fa-3x mb-3' style='color: #ffcc00;'></i> 
+                        <i class='fab fa-bootstrap fa-3x mb-3' style='color: #ffd700;'></i> 
                         <h5>Bootstrap</h5> 
                     </div> 
                 </div> 
             </div>
-
+            <div	class="col-md-6 mb-4">
+              	<div	class="card text-center">
+                  	<div	class="card-body">
+                      	<i	class="fas fa-server fa-3x mb-3"	style="color:#ffd700;"></i>
+                      	<h5>Django</h5>
+                  	</ div >
+              	</ div >
+          	</ div >
         </div>
 
-        <!-- API -->
+        <!-- API Technologies -->
         <h4 class='section-title'>API Technologies</h4>
         <div class='row'>
             <div class='col-md-6 mb-4'>
                 <div class='card text-center'>
                     <div class='card-body'>
-                        <i class='fas fa-plug fa-3x mb-3' style='color: #ffcc00;'></i> 
+                        <i class='fas fa-plug fa-3x mb-3' style='color: #ffd700;'></i> 
                         <h5>RestAPI</h5> 
                     </div> 
                 </div> 
             </div>
-            <div class='col-md-6 mb-4'> 
-                <div class='card text-center'> 
-                    <div class='card-body'> 
-                        <i class='fas fa-plug fa-3x mb-3' style='color: #ffcc00;'></i>  
-                        <h5>FastAPI</h5>  
-                    </div>  
-                </div>  
-            </div>
-        </div>
-
-        <!-- Databases -->
-        <h4 class='section-title'>Databases</h4>
-        <div class='row'>
-            <div class='col-md-6 mb-4'>
-                <div class='card text-center'>
-                    <div class='card-body'>
-                        <i class='fas fa-database fa-3x mb-3' style='color: #ffcc00;'></i>  
-                        <h5>MongoDB</h5>
-                    </div>
-                </div>
-            </div>
             <div class='col-md-6 mb-4'>  
                 <div	class='card text-center'>  
-                   	<div	class='card-body'>  
-                      	<i	class='fas fa-database fa-3x mb-3'	style='color: #ffcc00;'></i>  
-                      	<h5>MySQL</h5>  
-                  	</div>  
-              	</div>  
-          	</div>
-      	</div>
+                  	<div	class='card-body'>  
+                      	<i	class='fas fa-plug fa-3x mb-3'	style='color:#ffd700;'></i>  
+                      	<h5>FastAPI</h5>  
+                  	</ div >
+              	</ div >
+          	</ div >
+      	</ div >
 
-      	<!-- Tools -->
-      	<h4	class='section-title'>Tools & Technologies</h4>
+      	<!-- Databases -->
+      	<h4	class='section-title'>Databases</h4>
       	<div	class='row'>
           	<div	class='col-md-6 mb-4'>
               	<div	class='card text-center'>
                   	<div	class='card-body'>
-                      	<i	class="fas fa-tools fa-3x mb-3"	style="color:#ffcc00;"></i>
-                      	<h5>Pandas & NumPy</h5>
-                  	</div>
-              	</div>
-          	</div>
-
-          	<div	class="col-md-6 mb-4">
-              	<div	class="card text-center">
-                  	<div	class="card-body">
-                      	<i	class="fas fa-tools fa-3x mb-3"	style="color:#ffcc00;"></i>
-                      	<h5>Docker & Git</h5>
+                      	<i	class='fas fa-database fa-3x mb-3'	style='color:#ffd700;'></i>  
+                      	<h5>MongoDB</h5>
                   	</ div >
               	</ div >
           	</ div >
@@ -171,34 +152,56 @@
           	<div	class="col-md-6 mb-4">
               	<div	class="card text-center">
                   	<div	class="card-body">
-                      	<i	class="fas fa-tools fa-3x mb-3"	style="color:#ffcc00;"></i>
-                      	<h5>Mongodb Compass & PowerBi</h5 >
+                      	<i	class="fas fa-database fa-3x mb-3"	style="color:#ffd700;"></i>
+                      	<h5>MySQL</h5>
                   	</ div >
               	</ div >
           	</ div >
+      	  </ div >
 
-          	<div	class="col-md-6 mb - 4 ">
-              	<div	class = " card text - center ">
-                  	<div	class = " card - body ">
-                      	<i	class = " fas fa-tools fa - 3 x mb - 3 "	style = " color : # ffcc00 ; "></ i >
-                      	<h5 > SSH & Postman </h5>
+      	  <!-- Tools & Technologies -->
+      	  <h4	class='section-title'>Tools & Technologies</h4>
+      	  <div	class='row'>
+          	  <!-- Add icons for tools if available -->
+          	  <!-- Example Tools -->
+          	  <div	class="col-md-6 mb-4">
+              	  <div	class="card text-center">
+                  	  <div	class="card-body">
+                      	  <i	class="fas fa-tools fa-3x mb-3"	style="color:#ffd700;"></i>
+                      	  <h5>Pandas & NumPy</h5>
                   	  </ div >
               	  </ div >
           	  </ div >
 
-      	  <!-- Project Management Tools -->
-      	  <!-- Soft Skills -->
-      	  <!-- Add more sections here as needed -->
+          	  <!-- Add more tools as needed -->
+          	  <!-- Example Tools -->
+          	  <div	class="col-md-6 mb-4">
+              	  <div	class="card text-center">
+                  	  <div	class="card-body">
+                      	  <i	class="fas fa-tools fa-3x mb-3"	style="color:#ffd700;"></i>
+                      	  <h5>Docker & Git</h5>
+                  	  </ div >
+              	  </ div >
+          	  </ div >
 
-      	  <!-- Project Management Tools -->
-      	  <!-- You can add icons for project management tools if available -->
-      	  <!-- For example, using Atlassian icon if available -->
+      	  </ div >
+
       	  <!-- Soft Skills -->
+      	  <h4	class='section-title'>Soft Skills</h4>
       	  <!-- Add icons for soft skills if available -->
+      	  <!-- Example Soft Skills -->
+      	  <ul style="list-style-type:none; padding-left: 0;">
+          	    <!-- List of Soft Skills -->
+          	    <li><strong><i style="color:#ffd700;"class="fas fa-check-circle"></i>&nbsp;Problem Solving&nbsp;</strong></li>
+          	    <li><strong><i style="color:#ffd700;"class="fas fa-check-circle"></i>&nbsp;Critical Thinking&nbsp;</strong></li>
+          	    <li><strong><i style="color:#ffd700;"class="fas fa-check-circle"></i>&nbsp;Versatile and Adaptability&nbsp;</strong></li>
+          	    <li><strong><i style="color:#ffd700;"class="fas fa-check-circle"></i>&nbsp;Agility&nbsp;</strong></li>
+          	    <li><strong><i style="color:#ffd700;"class="fas fa-check-circle"></i>&nbsp;Curiosity&nbsp;</strong></li>
+      	    </ul>
 
-      	  <!-- Footer -->
-      	  <footer	class = 'footer text - center p - 3 ' >  
-          	  p > & copy ; 2024 Shashi Kiran M. All rights reserved.< / p >  
-          </footer>
+      	    <!-- Footer -->
+      	    <footer	class = 'footer text - center p - 3 ' >  
+          	    p > & copy ; 2024 Shashi Kiran M. All rights reserved.< / p >  
+          / footer >
 
-      </body>
+      / body >
